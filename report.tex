@@ -1,13 +1,16 @@
-\documentclass[12pt]{article}
+\documentclass{article}
 
 % Packages
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage[left=0.7in,right=0.7in,top=1in,bottom=1in]{geometry} % Set margins
 
 % Document settings
-\title{Your Document Title}
-\author{Your Name}
+\title{Bat sound: A case study}
+\author{Hoang Nguyen}
 \date{\today}
 
 \begin{document}
@@ -15,26 +18,39 @@
 \maketitle
 
 \begin{abstract}
-Your abstract text goes here.
+    This report investigates the acoustic properties of a bat's echolocation signal captured in the audio file "Bat.ogg". Employing signal processing techniques like Fourier transforms and spectrogram analysis, the study aims to explore the ultrasound signal's time-domain and frequency-domain characteristics. The analysis includes identifying distinct frequencies, their temporal evolution, and the presence of harmonics. Additionally, a technique to shift the signal's frequency to a lower value is discussed, enhancing the visibility of oscillations in the time-domain plot.
 \end{abstract}
 
+\begin{multicols}{2}
 \section{Introduction}
-Your introduction text goes here.
-
-\section{Background}
-Background information or literature review.
-
+    Bats utilize echolocation, emitting and receiving ultrasound waves, for navigation and hunting. This report examines a bat's echolocation signal in "Bat.ogg", using digital signal processing to analyze its time and frequency domain features. Understanding these signals is essential for comprehending bat echolocation behaviors and their interaction with the environment.
+    
 \section{Methodology}
-Explain your methodology here.
+\begin{enumerate}
+    \item \textbf{Loading the Audio File:} The "Bat.ogg" audio file is loaded, and its array shape is analyzed to understand the audio data structure. One of the stereo channels is selected for subsequent analysis.
+    \item \textbf{Time-Domain Analysis:} A time array corresponding to the signal is constructed, and the time-domain signal is plotted to observe its shape and temporal characteristics.
+    \item \textbf{Fourier Transform:} The Fourier transform is computed to convert the signal to the frequency domain. The modulus spectrum is plotted, focusing on identifying well-defined frequencies and harmonics.
+    \item \textbf{Spectrogram Analysis:} A spectrogram is performed with an appropriate window duration, considering the ultrasound nature of the signal. The results are visualized on a log10 scale.
+    \item \textbf{Frequency Analysis:} The spectrogram is analyzed to identify present frequencies, their timing, and frequency changes, considering the Shannon-Nyquist criterion.
+    \item \textbf{Frequency Shifting:} A method is implemented to lower the signal's frequency, making high-frequency oscillations visible in the time-domain. This involves constructing a sine signal, multiplying it with the original signal, and filtering the result.
+\end{enumerate}
+\section{Results and Discussion}
+The loaded audio file \textit{Bat.ogg} is represented by an array with a shape described by the tuple $(7872, 2)$. This shape indicates the structure of the audio data:
 
-\section{Results}
-Present your results here.
+\begin{itemize}
+    \item The first element of the tuple, $7872$, represents the total number of audio samples in the file.
+    \item The second element, $2$, signifies that the audio file is a stereo recording, comprising two separate audio channels (typically corresponding to the left and right stereo channels).
+\end{itemize}
 
-\section{Discussion}
-Discuss your findings here.
+For the purposes of our analysis, I simplify the data by converting this stereo recording into a mono audio signal. This is achieved by selecting only one of the two channels. The resulting mono audio array, consequently, has the shape $(7872,)$, indicating a single-channel audio stream with $7872$ samples. This simplification is preferable for certain types of audio analysis and processing, where dealing with a single channel is more manageable and efficient.
+
+Analysis of the spectrum revealed several well-defined frequencies, notably around 9700-9750 Hz, 10000-10200 Hz, 10100-10150 Hz, and near 10750 Hz. These frequencies could be crucial in understanding the bat's echolocation signals.
+
+While the presence of harmonics is suggested, definitive identification is challenging without knowing the fundamental frequency. Further study with a comprehensive frequency range is required to confirm the presence of harmonics.
 
 \section{Conclusion}
-Your conclusion text goes here.
+% Your conclusion text goes here.
+The study highlights the presence of distinct frequencies in the bat sound spectrum, which could be significant for echolocation. The potential presence of harmonics, although not conclusively determined, opens avenues for future research in this field.
 
 % References
 \begin{thebibliography}{9}
@@ -50,4 +66,6 @@ Albert Einstein.
 Annalen der Physik, 322(10):891–921, 1905.
 \end{thebibliography}
 
+
+\end{multicols}
 \end{document}
