@@ -11,7 +11,7 @@
 \usepackage[left=0.7in,right=0.7in,top=1in,bottom=1in]{geometry} % Set margins
 
 % Document settings
-\title{The Frequency of Flight: Leveraging Sound Analysis and AI for Insight into Bat Echolocation}
+\title{The Frequency of Flight: Leveraging Sound Analysis and Machine Learning for Insight into Bat Echolocation}
 \author{Hoang Nguyen}
 \date{\today}
 
@@ -22,7 +22,7 @@
 \section{Introduction}
     \text Bats utilize echolocation, emitting and receiving ultrasound waves, for navigation and hunting. This report examines a bat's echolocation signal in "Bat.ogg", using digital signal processing to analyze its time and frequency domain features. Understanding these signals is essential for comprehending bat echolocation behaviors and their interaction with the environment.  This report investigates the acoustic properties of a bat's echolocation signal captured in the audio file "Bat.ogg". 
     Employing signal processing techniques like Fourier transforms and spectrogram analysis, the study aims to explore the ultrasound signal's time-domain and frequency-domain characteristics. 
-    The analysis includes identifying distinct frequencies, their temporal evolution, and the presence of harmonics. Additionally, a technique to shift the signal's frequency to a lower value is discussed, enhancing the visibility of oscillations in the time-domain plot.
+    The analysis includes identifying distinct frequencies, their temporal evolution, and the presence of harmonics. Additionally, a technique to shift the signal's frequency to a lower value is discussed, enhancing the visibility of oscillations in the time-domain plot. Ultimately, these insights can be used to identify the species unknown bat using Machine Learning technique.
 
     
 \section{Analysis and Discussion}
@@ -70,7 +70,7 @@ In Figure 2, the spectrum is zoomed into the 9000 to 12000 Hz range. This range 
 \begin{itemize}
     \item \textbf{Key Peaks:} The spectrum shows distinct peaks at specific frequencies, that are 9.75 kHz, 10.1 kHz, 10.25 kHz, and 10.4 kHz. These peaks are indicative of the signal's dominant frequency components.
         
-    \item \textbf{Harmonics:} Subsequent peaks, appearing at regular intervals, are identified as the harmonics of the fundamental frequency. These harmonics are integral to the complex structure of the bat's echolocation signal. In the Fourier spectrum the harmonics are clearly shown, and the space between each peaks are evenly spaced between the range 9.6 kHz to 11 kHz.
+    \item \textbf{Harmonics:} Subsequent peaks, appearing at regular intervals, are identified as the harmonics of the fundamental frequency. These harmonics are integral to the complex structure of the bat's echolocation signal. In the Fourier spectrum the harmonics are clearly shown, and the space between each peaks are evenly spaced for each subsequent peaks.
 \end{itemize}
 
 \begin{figure}[h]
@@ -84,7 +84,7 @@ In Figure 2, the spectrum is zoomed into the 9000 to 12000 Hz range. This range 
 The spectrogram of the bat signal was computed and analyzed to understand its frequency content over time. The following observations were made based on the spectrogram plot:
 
 \subsection*{Presence and Variation of Frequencies}
-The spectrogram reveals the presence of various frequency components at different times throughout the signal's duration. There is a particular interesting frequency at around 11 kHz sharply evolve from 0.06 to 0.14 second. This is the frequency of the bat at around +20 bB.
+The spectrogram reveals the presence of various frequency components at different times throughout the signal's duration. There is a particular interesting frequency at around 11 kHz sharply evolve from 0.06 to 0.14 seconds. This is the frequency of the bat at around +20 bB.
 
 \subsection*{Considerations of Shannon-Nyquist Criterion}
 
@@ -213,7 +213,7 @@ Spotted Bat (Euderma maculatum) & 0.452 \\
 \subsection{Discussion of Results}
 The SVM model demonstrates a decent probability (approximately 45.2\%) for the unknown bat frequency being classified as a Spotted Bat (Euderma maculatum), the other candidates are Big Brown bat (Eptesicus fuscus) (approximately 29.9\%) and Little Brown Bat (Myotis lucifugus) (approximately 16.8 \%). This probability suggests a decent confidence by the model in this classification, potentially indicating frequency characteristics resemblance to the Spotted Bat that are captured by the SVM classifier.
 
-In contrast, the probabilities associated with the rest relatively low, mostly around 1\%. This disparity in probabilities indicates that the frequency characteristics of the unknown bat sound are most closely aligned with those typically attributed to the Spotted Bat (no. 1) Big Brown bat (no. 2) and Little Brown Bat (no. 3), as compared to other species in the dataset. \footnote{Code are in \href{https://github.com/hoang-nguyen13/Bat_Sound.git}{Github.}}
+In contrast, the probabilities associated with the rest relatively low, mostly around 1\%. This disparity in probabilities indicates that the frequency characteristics of the unknown bat sound are most closely aligned with those typically attributed to the Spotted Bat (no. 1) Big Brown bat (no. 2) and Little Brown Bat (no. 3), as compared to other species in the dataset. \footnote{Code is in \href{https://github.com/hoang-nguyen13/Bat_Sound.git}{Github.}}
 
 
 \section{Conclusion}
