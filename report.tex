@@ -64,7 +64,7 @@ The time-domain plot, however, doesn't provide much insight into the frequency o
 \caption{Modulus spectrum of the bat signal.}
 \end{figure}
 
-In Figure 2, the spectrum is zoomed into the 9000 to 12000 Hz range. This range is particularly interesting for bat signals as it often contains key frequency components of their echolocation calls.
+In Figure 2, the spectrum is zoomed into the 9000 to 12000 Hz range. This range is particularly interesting for bat signals as it contains key frequency components of their echolocation calls.
 
 \subsubsection*{Identification of Frequency Components and Harmonics}
 \begin{itemize}
@@ -116,24 +116,24 @@ To observe the high-frequency oscillations of the bat signal in the time domain,
 The processed signal reveals oscillations that were not visible in the original high-frequency signal. The frequency shifting technique was employed to make the oscillations in the time-domain signal more visible. The resulting time-domain plot exhibits a clean sine wave pattern from 0.05 to 0.1 seconds, with a peaked amplitude of 0.1 at approximately 0.080 seconds. This successful frequency shift has allowed us to clearly observe and analyze the oscillations, which are essential for understanding the signal's characteristics. Additionally, this technique has proven effective in enhancing the interpretability of the data, contributing to a more comprehensive analysis.
 
 \subsection{Classification (Q 3 - 7)}
-Since the species of the bat is unknown. In this section, I shall create a ML algorithms to classify different species. Then use that to predict which is species the unknown bat belongs to. A synthetic dataset representing the echolocation frequencies of various bat species was generated for analysis. This dataset was created to simulate the range of frequencies used by different bat species for echolocation. The following bat species were included in the dataset:
+Since the species of the bat is unknown. In this section, I shall write a ML algorithms to classify different species. Then use that to predict which is species the unknown bat belongs to. A synthetic dataset representing the echolocation frequencies of various bat species was generated for analysis. This dataset was created to simulate the range of frequencies used by different bat species for echolocation. The following bat species were included in the dataset:
 
 \begin{itemize}
-    \item \textbf{Little Brown Bat (Myotis lucifugus):} Frequency Range: 20 kHz to 110 kHz.
+    \item \textbf{Little Brown Bat (Myotis lucifugus):} frequency range from 20 kHz to 110 kHz.
 
-    \item \textbf{Big Brown Bat (Eptesicus fuscus):} Frequency Range: 20 kHz to 60 kHz.
+    \item \textbf{Big Brown Bat (Eptesicus fuscus):} frequency range from 20 kHz to 60 kHz.
 
-    \item \textbf{Mexican Free-tailed Bat (Tadarida brasiliensis):} Frequency Range: 25 kHz to 50 kHz.
+    \item \textbf{Mexican Free-tailed Bat (Tadarida brasiliensis):} frequency range from 25 kHz to 50 kHz.
 
-    \item \textbf{Greater Horseshoe Bat (Rhinolophus ferrumequinum):} Frequency Range: 75 kHz to 110 kHz.
+    \item \textbf{Greater Horseshoe Bat (Rhinolophus ferrumequinum):} frequency range from 75 kHz to 110 kHz.
 
-    \item \textbf{Lesser Horseshoe Bat (Rhinolophus hipposideros):} Frequency Range: 75 kHz to 110 kHz.
+    \item \textbf{Lesser Horseshoe Bat (Rhinolophus hipposideros):} frequency range from 75 kHz to 110 kHz.
 
-    \item \textbf{Soprano Pipistrelle (Pipistrellus pygmaeus):} Frequency Range: 55 kHz to 85 kHz.
+    \item \textbf{Soprano Pipistrelle (Pipistrellus pygmaeus):} frequency range from 55 kHz to 85 kHz.
 
-    \item \textbf{Common Pipistrelle (Pipistrellus pipistrellus):} Frequency Range: 45 kHz to 70 kHz.
+    \item \textbf{Common Pipistrelle (Pipistrellus pipistrellus):} frequency range from 45 kHz to 70 kHz.
 
-    \item \textbf{Spotted Bat (Euderma maculatum):} Frequency Range: 15 kHz to 50 kHz.
+    \item \textbf{Spotted Bat (Euderma maculatum):} frequency range from 15 kHz to 50 kHz.
 \end{itemize}
 
 
@@ -156,24 +156,30 @@ The classification report provides a detailed assessment of the model's performa
 \subsubsection{Analysis}
 The analysis of the Random Forest Classifier's performance, as depicted in the classification report, provides several key insights:
 \begin{center}
-\begin{verbatim}
-              precision    recall  f1-score   support
-           0       0.24      0.22      0.23        23
-           1       0.46      0.52      0.49        23
-           2       0.41      0.36      0.38        25
-           3       0.58      0.68      0.62        28
-           4       0.17      0.18      0.18        22
-           5       0.38      0.45      0.42        22
-           6       0.70      0.57      0.63        28
-           7       0.35      0.31      0.33        29
-    accuracy                           0.44       200
-   macro avg       0.40      0.43      0.40       200
-weighted avg       0.41      0.44      0.41       200
-\end{verbatim}
-\end{center}
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Class & Precision & Recall & F1-Score & Support \\
+    \hline
+    0 & 0.24 & 0.22 & 0.23 & 23 \\
+    1 & 0.46 & 0.52 & 0.49 & 23 \\
+    2 & 0.41 & 0.36 & 0.38 & 25 \\
+    3 & 0.58 & 0.68 & 0.62 & 28 \\
+    4 & 0.17 & 0.18 & 0.18 & 22 \\
+    5 & 0.38 & 0.45 & 0.42 & 22 \\
+    6 & 0.70 & 0.57 & 0.63 & 28 \\
+    7 & 0.35 & 0.31 & 0.33 & 29 \\
+    \hline
+    Accuracy & & & 0.44 & 200 \\
+    \hline
+    Macro Avg & 0.40 & 0.43 & 0.40 & 200 \\
+    Weighted Avg & 0.41 & 0.44 & 0.41 & 200 \\
+    \hline
+    \end{tabular}
+    \end{center}
+    
 
 \begin{itemize}
-    \item \textbf{Overall Performance:} The classifier achieves an overall accuracy of 42\%, indicating a moderate level of effectiveness in species classification. This suggests that while the model is generally capable of distinguishing between species, there is still room for improvement.
+    \item \textbf{Overall Performance:} The classifier achieves an overall accuracy of 44\%, indicating a moderate level of effectiveness in species classification. This suggests that while the model is generally capable of distinguishing between species, there is still room for improvement.
 
     \item \textbf{Species-Specific Observations:}
     \begin{itemize}
