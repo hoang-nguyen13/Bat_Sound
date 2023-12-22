@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1702937013 "/Users/hoangnguyen/Bat_Sound/report.tex" "report.pdf" "report" 1702937014 0
-  "/Users/hoangnguyen/Bat_Sound/report.tex" 1702937012 17834 a17f31016bda62dff83dc91847f0e5cb ""
+["pdflatex"] 1703204978 "/Users/hoangnguyen/Bat_Sound/report.tex" "report.pdf" "report" 1703204980 0
+  "/Users/hoangnguyen/Bat_Sound/report.tex" 1703204977 19025 a789af2e70c30bf2c5f382af0b944608 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -83,14 +83,14 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1699194777 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1699194631 7883452 d28628b1ff87ed4fcc08e69ea7fbab10 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "bat_species_freq.png" 1702936683 67570 6d32ec2da792cb68d01dbdd98b88426c ""
-  "modulus_spectrum.png" 1702936681 38071 b980ee00a34665636d53242376e44817 ""
-  "report.aux" 1702937014 3949 610b5aa05d3980634bf14f86e887815a "pdflatex"
-  "report.out" 1702937014 3877 0f24af70a118044d1310f7784936516d "pdflatex"
-  "report.tex" 1702937012 17834 a17f31016bda62dff83dc91847f0e5cb ""
-  "shifted_time_domain.png" 1702936682 25552 8343c229a5da4b1f7a77db47a138bcac ""
-  "spectrogram.png" 1702936681 102239 3ab57d4634a3e77e87b98fda80aa3576 ""
-  "time_domain_signal_plot.png" 1702936680 17401 6e685077d6b9590adf31bf2a8faedb35 ""
+  "bat_species_freq.png" 1703202585 66711 3cce6824ee9dedc33d7e0b7ae96c67aa ""
+  "modulus_spectrum.png" 1703202463 37561 b67aec97dbf32aaf3ed8d5627a59205e ""
+  "report.aux" 1703204980 3797 db094b75bfd4d9945050e862b9941b8d "pdflatex"
+  "report.out" 1703204980 3582 51b1e34bad13c8d5fe0a62bf4cabc0ba "pdflatex"
+  "report.tex" 1703204977 19025 a789af2e70c30bf2c5f382af0b944608 ""
+  "shifted_time_domain.png" 1703202465 35088 8bdb3bebd4075cabeed600c7c526fabd ""
+  "spectrogram.png" 1703202464 115525 a5c80d591ce03856d5f7897b8044b649 ""
+  "time_domain_signal_plot.png" 1703202463 17401 6e685077d6b9590adf31bf2a8faedb35 ""
   (generated)
   "report.aux"
   "report.log"

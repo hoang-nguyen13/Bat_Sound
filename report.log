@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.5)  18 DEC 2023 23:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.5)  22 DEC 2023 01:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -405,10 +405,10 @@ Package hyperref Info: Link coloring OFF on input line 18.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<time_domain_signal_plot.png, id=76, 722.7pt x 289.08pt>
+<time_domain_signal_plot.png, id=72, 722.7pt x 289.08pt>
 File: time_domain_signal_plot.png Graphic file (type png)
 <use time_domain_signal_plot.png>
-Package pdftex.def Info: time_domain_signal_plot.png  used on input line 39.
+Package pdftex.def Info: time_domain_signal_plot.png  used on input line 34.
 (pdftex.def)             Requested size: 513.11745pt x 205.24823pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -416,54 +416,54 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<modulus_spectrum.png, id=87, 867.24pt x 433.62pt>
+<modulus_spectrum.png, id=84, 867.24pt x 433.62pt>
 File: modulus_spectrum.png Graphic file (type png)
 <use modulus_spectrum.png>
-Package pdftex.def Info: modulus_spectrum.png  used on input line 63.
+Package pdftex.def Info: modulus_spectrum.png  used on input line 56.
 (pdftex.def)             Requested size: 513.11745pt x 256.56801pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./time_domain_signal_plot.png>]
-<spectrogram.png, id=95, 578.16pt x 433.62pt>
+<spectrogram.png, id=92, 578.16pt x 433.62pt>
 File: spectrogram.png Graphic file (type png)
 <use spectrogram.png>
-Package pdftex.def Info: spectrogram.png  used on input line 78.
+Package pdftex.def Info: spectrogram.png  used on input line 71.
 (pdftex.def)             Requested size: 410.49551pt x 307.87236pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3 <./modulus_spectrum.png>] [4 <./spectrogram.png>]
-<shifted_time_domain.png, id=114, 722.7pt x 289.08pt>
+<shifted_time_domain.png, id=108, 722.7pt x 289.08pt>
 File: shifted_time_domain.png Graphic file (type png)
 <use shifted_time_domain.png>
-Package pdftex.def Info: shifted_time_domain.png  used on input line 112.
+Package pdftex.def Info: shifted_time_domain.png  used on input line 101.
 (pdftex.def)             Requested size: 513.11745pt x 205.24823pt.
  [5 <./shifted_time_domain.png>]
-<bat_species_freq.png, id=123, 867.24pt x 578.16pt>
+<bat_species_freq.png, id=117, 867.24pt x 578.16pt>
 File: bat_species_freq.png Graphic file (type png)
 <use bat_species_freq.png>
-Package pdftex.def Info: bat_species_freq.png  used on input line 146.
+Package pdftex.def Info: bat_species_freq.png  used on input line 134.
 (pdftex.def)             Requested size: 513.11745pt x 342.09068pt.
  [6] [7 <./bat_species_freq.png>] [8] [9] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 0F24AF70A118044D1310F7784936516D;3877.
+(rerunfilecheck)             Checksum: 51B1E34BAD13C8D5FE0A62BF4CABC0BA;3582.
  ) 
 Here is how much of TeX's memory you used:
- 9652 strings out of 476025
- 152828 string characters out of 5790017
+ 9648 strings out of 476025
+ 152778 string characters out of 5790017
  1861388 words of memory out of 5000000
- 29952 multiletter control sequences out of 15000+600000
+ 29951 multiletter control sequences out of 15000+600000
  519144 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,76p,766b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,76p,1144b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (9 pages, 347217 bytes).
+Output written on report.pdf (9 pages, 355535 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
