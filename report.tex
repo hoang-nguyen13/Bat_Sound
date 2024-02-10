@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[twocolumn]{article}[ht]
 
 % Packages
 \usepackage[utf8]{inputenc}
@@ -8,11 +8,16 @@
 \usepackage{hyperref}
 \usepackage{booktabs}
 \usepackage{hyperref}
-\usepackage[left=0.7in,right=0.7in,top=1in,bottom=1in]{geometry} % Set margins
-
+\usepackage{geometry} 
+\geometry{
+  left=17mm,
+  right=17mm,
+  top=15mm,
+  bottom=15mm
+}
 % Document settings
 \title{Analysis of Bat Frequencies for Classification of Species using Machine Learning Algorithms}
-\author{Hoang Nguyen}
+\author{Hoang Nguyen \\ \textit{Universite de Bourgogne}}
 \date{\today}
 
 \begin{document}
@@ -29,10 +34,10 @@ The shape of the audio array is given by $(7872, 2)$, which signifies that the a
 \subsection{Time-Domain Signal Analysis (Q 3 - 2)}
 After loading the audio file of a bat sound and selecting one of its channels, a time-domain plot of the signal was generated. The plot provides a visual representation of how the amplitude of the signal varies over time.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=1.0\textwidth]{time_domain_signal_plot.png}
-\caption{Time-domain plot of the bat sound signal.}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{time_domain_signal_plot.png}
+    \caption{Time-domain plot of the bat sound signal.}
 \end{figure}
 
 From this time-domain plot of the bat sound signal, several key numeric characteristics are:
@@ -51,9 +56,9 @@ From this time-domain plot of the bat sound signal, several key numeric characte
 \subsection{Fourier Transform and Spectrum Analysis (Q 3 - 3)}
 The time-domain plot, however, doesn't provide much insight into the frequency of this species of bat. So, analyzing the Fourier transform of the bat signal can give much better insights into the characteristics of the bat sound. After performing Fourier transformations and calculating the modulus the the sound, interesting properties are observed as followed:
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=1\textwidth]{modulus_spectrum.png}
+\includegraphics[width=0.5\textwidth]{modulus_spectrum.png}
 \caption{Modulus spectrum of the bat signal.}
 \end{figure}
 
@@ -66,9 +71,9 @@ In Figure 2, the spectrum is zoomed into the 9 kHz to 12 kHz range. This range i
     \item \textbf{Harmonics:} These subsequent peaks, appearing at regular intervals, are identified as the harmonics of the fundamental frequency. These harmonics are integral to the complex structure of the bat's echolocation signal. In the Fourier spectrum the harmonics are clearly shown, and the space between each peaks are evenly spaced for each subsequent peaks.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{spectrogram.png}
+    \includegraphics[width=0.5\textwidth]{spectrogram.png}
     \caption{Spectrogram of the bat sound.}
     \label{fig:spectrogram}
 \end{figure}
@@ -96,9 +101,9 @@ To observe the high-frequency oscillations of the bat signal in the time domain,
 \end{itemize}
 
 \subsection*{Resulting Signal}
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=1\textwidth]{shifted_time_domain.png}
+\includegraphics[width=0.5\textwidth]{shifted_time_domain.png}
 \caption{Time-domain representation of the bat signal after frequency shifting.}
 \end{figure}
 
@@ -131,7 +136,7 @@ The combined dataset, comprising all species, was then visualized using a scatte
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=1\textwidth]{bat_species_freq.png}
+\includegraphics[width=0.5\textwidth]{bat_species_freq.png}
 \caption{Scatter plot of synthetic bat species frequencies. Each color represents a different species, illustrating the variation in echolocation frequencies among them.}
 \end{figure}
 
@@ -144,6 +149,7 @@ The classification report provides a detailed assessment of the model's performa
 \subsubsection{Analysis}
 The analysis of the Random Forest Classifier's performance, as depicted in the classification report, provides several key insights:
 \begin{center}
+    \small
     \begin{tabular}{|c|c|c|c|c|}
     \hline
     Class & Precision & Recall & F1-Score & Support \\
@@ -163,8 +169,7 @@ The analysis of the Random Forest Classifier's performance, as depicted in the c
     Weighted Avg & 0.48 & 0.47 & 0.47 & 200 \\
     \hline
     \end{tabular}
-    \end{center}
-    
+\end{center}
 
 \begin{itemize}
     \item \textbf{Overall Performance:} The classifier achieves an overall accuracy of 47\%, indicating a moderate level of effectiveness in species classification. This suggests that while the model is generally capable of distinguishing between species, there is still room for improvement.
@@ -188,26 +193,30 @@ The Support Vector Machine (SVM) classifier was employed to predict the likeliho
 The following table showcases the probability distribution as predicted by the SVM model for each species:
 
 \begin{center}
-\begin{tabular}{lr}
-\toprule
-Species & Probability \\
-\midrule
-Big Brown Bat (Eptesicus fuscus) & 0.244 \\
-Common Pipistrelle (Pipistrellus pipistrellus) & 0.007 \\
-Greater Horseshoe Bat (Rhinolophus ferrumequinum) & 0.014 \\
-Lesser Horseshoe Bat (Rhinolophus hipposideros) & 0.009 \\
-Little Brown Bat (Myotis lucifugus) & 0.166 \\
-Mexican Free-tailed Bat (Tadarida brasiliensis) & 0.029 \\
-Soprano Pipistrelle (Pipistrellus pygmaeus) & 0.024 \\
-Spotted Bat (Euderma maculatum) & 0.505 \\
-\bottomrule
-\end{tabular}
+    \footnotesize
+    \renewcommand{\arraystretch}{0.8}
+    \begin{tabular}{lr}
+    \toprule
+    Species & Probability \\
+    \midrule
+    Big Brown Bat (Eptesicus fuscus) & 0.244 \\
+    Common Pipistrelle (Pipistrellus pipistrellus) & 0.007 \\
+    Greater Horseshoe Bat (Rhinolophus ferrumequinum) & 0.014 \\
+    Lesser Horseshoe Bat (Rhinolophus hipposideros) & 0.009 \\
+    Little Brown Bat (Myotis lucifugus) & 0.166 \\
+    Mexican Free-tailed Bat (Tadarida brasiliensis) & 0.029 \\
+    Soprano Pipistrelle (Pipistrellus pygmaeus) & 0.024 \\
+    Spotted Bat (Euderma maculatum) & 0.505 \\
+    \bottomrule
+    \end{tabular}
 \end{center}
+
+
 
 \subsection{Discussion of Results}
 The SVM model demonstrates a decent probability (approximately 50.5\%) for the unknown bat frequency being classified as a Spotted Bat (Euderma maculatum), the other candidates are Big Brown bat (Eptesicus fuscus) (approximately 24.4\%) and Little Brown Bat (Myotis lucifugus) (approximately 16.6\%). This probability suggests a decent confidence by the model in this classification, potentially indicating frequency characteristics resemblance to the Spotted Bat that are captured by the SVM classifier.
 
-In contrast, the probabilities associated with the rest relatively low, mostly around 1\%. This disparity in probabilities indicates that the frequency characteristics of the unknown bat sound are most closely aligned with those typically attributed to the Spotted Bat (no. 1) Big Brown bat (no. 2) and Little Brown Bat (no. 3), as compared to other species in the dataset. \footnote{Code is in \href{https://github.com/hoang-nguyen13/Bat_Sound.git}{Github.}}
+In contrast, the probabilities associated with the rest relatively low, mostly around 1\%. This disparity in probabilities indicates that the frequency characteristics of the unknown bat sound are most closely aligned with those typically attributed to the Spotted Bat (no. 1) Big Brown bat (no. 2) and Little Brown Bat (no. 3), as compared to other species in the dataset. \footnote{\href{https://github.com/hoang-nguyen13/Bat_Sound.git}{Github.}}
 
 
 \section{Conclusion}

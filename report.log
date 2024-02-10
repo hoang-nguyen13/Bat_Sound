@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.5)  22 DEC 2023 01:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.5)  5 FEB 2024 14:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,8 +8,8 @@ entering extended mode
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -29,6 +29,10 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \c@tracingmulticols=\count193
+
+
+Package multicol Warning: May not work with the twocolumn option on input line 143.
+
 \mult@box=\box51
 \multicol@leftmargin=\dimen141
 \c@unbalance=\count194
@@ -328,24 +332,24 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count300
@@ -365,7 +369,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 23.
  (./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
@@ -379,27 +383,27 @@ Package hyperref Info: Link coloring OFF on input line 18.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(50.58878pt, 513.11745pt, 50.58878pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* h-part:(L,W,R)=(48.36967pt, 517.55565pt, 48.36967pt)
+* v-part:(T,H,B)=(42.67912pt, 709.61174pt, 42.67912pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=513.11745pt
-* \textheight=650.43001pt
-* \oddsidemargin=-21.68121pt
-* \evensidemargin=-21.68121pt
-* \topmargin=-37.0pt
+* \textwidth=517.55565pt
+* \textheight=709.61174pt
+* \oddsidemargin=-23.90031pt
+* \evensidemargin=-23.90031pt
+* \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
+* \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumnfalse
+* \@twocolumntrue
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -408,62 +412,97 @@ Package hyperref Info: Link coloring OFF on input line 18.
 <time_domain_signal_plot.png, id=72, 722.7pt x 289.08pt>
 File: time_domain_signal_plot.png Graphic file (type png)
 <use time_domain_signal_plot.png>
-Package pdftex.def Info: time_domain_signal_plot.png  used on input line 34.
-(pdftex.def)             Requested size: 513.11745pt x 205.24823pt.
+Package pdftex.def Info: time_domain_signal_plot.png  used on input line 39.
+(pdftex.def)             Requested size: 258.77782pt x 103.50851pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (5.0pt too wide) in paragraph at lines 39--40
+ [][] 
+ []
 
-[1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<modulus_spectrum.png, id=84, 867.24pt x 433.62pt>
+Underfull \hbox (badness 6792) in paragraph at lines 56--56
+[]\OT1/cmr/bx/n/12 Fourier Trans-form and Spec-trum
+ []
+
+[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./time_domain_signal_plot.png>]
+<modulus_spectrum.png, id=90, 867.24pt x 433.62pt>
 File: modulus_spectrum.png Graphic file (type png)
 <use modulus_spectrum.png>
-Package pdftex.def Info: modulus_spectrum.png  used on input line 56.
-(pdftex.def)             Requested size: 513.11745pt x 256.56801pt.
+Package pdftex.def Info: modulus_spectrum.png  used on input line 61.
+(pdftex.def)             Requested size: 258.77782pt x 129.38565pt.
 
+Overfull \hbox (5.0pt too wide) in paragraph at lines 61--62
+ [][] 
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./time_domain_signal_plot.png>]
-<spectrogram.png, id=92, 578.16pt x 433.62pt>
+<spectrogram.png, id=91, 578.16pt x 433.62pt>
 File: spectrogram.png Graphic file (type png)
 <use spectrogram.png>
-Package pdftex.def Info: spectrogram.png  used on input line 71.
-(pdftex.def)             Requested size: 410.49551pt x 307.87236pt.
+Package pdftex.def Info: spectrogram.png  used on input line 76.
+(pdftex.def)             Requested size: 258.77782pt x 194.08179pt.
 
+Overfull \hbox (5.0pt too wide) in paragraph at lines 76--77
+ [][] 
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3 <./modulus_spectrum.png>] [4 <./spectrogram.png>]
-<shifted_time_domain.png, id=108, 722.7pt x 289.08pt>
+[2 <./modulus_spectrum.png> <./spectrogram.png>]
+<shifted_time_domain.png, id=103, 722.7pt x 289.08pt>
 File: shifted_time_domain.png Graphic file (type png)
 <use shifted_time_domain.png>
-Package pdftex.def Info: shifted_time_domain.png  used on input line 101.
-(pdftex.def)             Requested size: 513.11745pt x 205.24823pt.
- [5 <./shifted_time_domain.png>]
-<bat_species_freq.png, id=117, 867.24pt x 578.16pt>
+Package pdftex.def Info: shifted_time_domain.png  used on input line 106.
+(pdftex.def)             Requested size: 258.77782pt x 103.50851pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 106--107
+ [][] 
+ []
+
+
+Underfull \hbox (badness 6236) in paragraph at lines 123--124
+[]\OT1/cmr/bx/n/10 Lesser Horse-shoe Bat (Rhi-nolo-phus hip-
+ []
+
+<bat_species_freq.png, id=104, 867.24pt x 578.16pt>
 File: bat_species_freq.png Graphic file (type png)
 <use bat_species_freq.png>
-Package pdftex.def Info: bat_species_freq.png  used on input line 134.
-(pdftex.def)             Requested size: 513.11745pt x 342.09068pt.
- [6] [7 <./bat_species_freq.png>] [8] [9] (./report.aux)
+Package pdftex.def Info: bat_species_freq.png  used on input line 139.
+(pdftex.def)             Requested size: 258.77782pt x 172.5142pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 139--140
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 143--144
+[]\OT1/cmr/m/n/10 A Ran-dom For-est Clas-si-fier, an en-sem-ble learn-ing
+ []
+
+[3 <./shifted_time_domain.png> <./bat_species_freq.png>]
+Overfull \hbox (11.86874pt too wide) in paragraph at lines 198--212
+ [] 
+ []
+
+[4] [5
+
+] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 51B1E34BAD13C8D5FE0A62BF4CABC0BA;3582.
  ) 
 Here is how much of TeX's memory you used:
- 9648 strings out of 476025
- 152778 string characters out of 5790017
- 1861388 words of memory out of 5000000
- 29951 multiletter control sequences out of 15000+600000
- 519144 words of font info for 56 fonts, out of 8000000 for 9000
+ 9651 strings out of 476025
+ 152781 string characters out of 5790017
+ 1876388 words of memory out of 5000000
+ 29953 multiletter control sequences out of 15000+600000
+ 519489 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,76p,1144b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (9 pages, 355535 bytes).
+ 75i,8n,76p,1144b,508s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on report.pdf (5 pages, 493803 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 199 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
